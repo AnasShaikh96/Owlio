@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+    background: #f1f1f1 !important;
+    font-family: "Poppins", "sans-serif" !important;
+}
+
+.btn-purple {
+    background-color: #9c27b0;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    border: 1px solid #9c27b0;
+    transition: 0.25s ease;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.btn-light {
+    background-color: #fff;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid #eee;
+    transition: 0.25s ease;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.btn-light:hover {
+    background: #fff;
+}
+.btn-light:focus {
+    background-color: #fff !important;
+}
+.btn-light:active {
+    background-color: #fff !important;
+}
+input[type="text"] {
+    border: none;
+    cursor: pointer;
+    color: #999;
+}
+input[type="text"]:hover {
+    background: #fff;
+    cursor: pointer;
+}
+input[type="text"]:focus {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mdi-account-plus,
+.mdi-calendar {
+    font-size: 20px;
+}
+.btn-purple:hover {
+    background: #7b1fa2;
+}
+.btn-purple:focus {
+    background-color: #7b1fa2;
+    border: 1px solid #7b1fa2;
+    box-shadow: 0px 0px 10px rgba(123, 31, 162, 0.25);
+}
+
+.mdi-account-multiple,
+.mdi-clipboard-account {
+    font-size: 50px;
+    color: #9c27b0;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.09);
+}
+
+.table > tbody > tr > td {
+    border: none;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("/components/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+#foodContent {
+    position: relative;
+}
+.card-footer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50% !important;
+    left:120px;
+    bottom: -8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color:#9c27b0;
+    cursor: pointer;
+
+}
+.card {
+    border-radius:15px ;
+}

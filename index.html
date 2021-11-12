@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./components/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/components/material-design-icons/css/materialdesignicons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./components/daterangepicker/css/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./components/powerful-calendar/theme.css" />
+    <link rel="stylesheet" href="./components/powerful-calendar/style.css" />
+
+    <title>Owlio</title>
+  </head>
+
+  <body>
+    <div class="container-fluid p-4">
+      <div class="d-flex justify-content-between align-items-center m-0">
+        <div>
+          <h3 class="font-weight-bold">Dashboard</h3>
+          <p class="text-muted m-0">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-end">
+          <button
+            class="btn-light rounded-pill w-50 px-2 py-2 mr-2 d-flex daterange"
+            name="daterange"
+          >
+            <i class="mdi mdi-calendar px-3" style="color: #9c27b0"></i>
+            <div>
+              <span class="d-block pr-1">Change Period</span>
+              <input
+                type="text"
+                class="d-block overflow-hidden"
+                name="daterange"
+                value="01/01/2020 - 01/01/2021"
+                style="width: 93%"
+              />
+            </div>
+            <i
+              class="mdi mdi-chevron-down pr-2"
+              style="font-size: 20px; color: #999"
+            ></i>
+          </button>
+          <button class="btn-purple text-light rounded-pill px-3 py-2 ml-2">
+            <i class="mdi mdi-account-plus px-3"></i>
+            <span class="d-inline-block pr-2"> New Admission</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-6 m-0">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <div>
+                  <h3 class="font-weight-bold">9,843</h3>
+                  <span class="d-block">Total Students</span>
+                  <span class="d-block text-muted" style="font-size: 13px"
+                    ><span class="text-success">+0.5%</span> than last
+                    month</span
+                  >
+                </div>
+                <i class="mdi mdi-account-multiple"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 m-0">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <div>
+                  <h3 class="font-weight-bold">9,843</h3>
+                  <span class="d-block">Total Teachers</span>
+                  <span class="d-block text-muted" style="font-size: 13px"
+                    ><span class="text-danger">-2%</span> than last month</span
+                  >
+                </div>
+                <i class="mdi mdi-clipboard-account"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 m-0">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <div class="mx-3">
+                  <div
+                    id="donut_single"
+                    style="width: 100px; height: 100px"
+                  ></div>
+                </div>
+                <div class="mx-3">
+                  <h3 class="font-weight-bold">887</h3>
+                  <span class="d-block">Events</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 m-0">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <div class="mx-3">
+                  <div
+                    id="donut_second"
+                    style="width: 100px; height: 100px"
+                  ></div>
+                </div>
+                <div class="mx-3">
+                  <h3 class="font-weight-bold">887</h3>
+                  <span class="d-block">Foods</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="h5 font-weight-bold">School Finance</h3>
+                  <div class="d-flex align-items-center">
+                    <button
+                      class="
+                        btn btn-block
+                        rounded-pill
+                        shadow-md
+                        border border-muted
+                      "
+                      style="font-size: 13px"
+                    >
+                      Daily
+                      <i
+                        class="mdi mdi-chevron-down"
+                        style="color: #9c27b0"
+                      ></i>
+                    </button>
+                    <i class="mdi mdi-dots-vertical pl-3 text-muted h4"></i>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div
+                      id="donut_third"
+                      style="width: 75px; height: 75px"
+                    ></div>
+                    <div>
+                      <h6 class="font-weight-bold m-0">$23,500</h6>
+                      <span style="font-size: 15px">Total Income</span>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div
+                      id="donut_fourth"
+                      style="width: 75px; height: 75px"
+                    ></div>
+                    <div>
+                      <h6 class="font-weight-bold m-0">$1,450</h6>
+                      <span style="font-size: 15px">Total Expense</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="chart_bar" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h3 class="h5 font-weight-bold">School Event Calendar</h3>
+                </div>
+                <div class="calendar-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-4">
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="h5 font-weight-bold">School Finance</h3>
+                  <i class="mdi mdi-dots-vertical pl-3 text-muted h4"></i>
+                </div>
+                <div id="chart_line" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h3 class="h5 font-weight-bold">Unpaid Student Intution</h3>
+                    <span class="text-muted" style="font-size: 14px"
+                      >You have <b>456</b> contacts</span
+                    >
+                  </div>
+
+                  <i class="mdi mdi-dots-vertical text-muted h4"></i>
+                </div>
+                <div>
+                  <table class="table">
+                    <tbody id="debtContent"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body p-0">
+                <div
+                  class="
+                    d-flex
+                    pt-4
+                    pl-4
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div>
+                    <h3 class="h5 font-weight-bold">Current Food Menu</h3>
+                    <span class="text-muted" style="font-size: 14px"
+                      >Lorem ipsum dolor sit amet</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div id="foodContent"></div>
+                  <div>
+                    <div class="p-4 border-0">
+                      <i class="mdi mdi-chevron-down card-footer"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h3 class="h5 font-weight-bold">Recent Students</h3>
+                    <span class="text-muted" style="font-size: 14px"
+                      >You have <b>456</b> clients</span
+                    >
+                  </div>
+                </div>
+                <table class="table">
+                  <tbody id="clientContent"></tbody>
+                </table>
+                <div
+                  class="card border-0"
+                  style="background: #eee; cursor: pointer"
+                >
+                  <div class="card-body text-center m-0">
+                    <h5 class="font-weight-bold m-0 h6" style="color: #7b1fa2">
+                      View 250 More
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./components/jquery/jquery.min.js"></script>
+    <script src="./components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./components/momentjs/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="./components/powerful-calendar/calendar.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
